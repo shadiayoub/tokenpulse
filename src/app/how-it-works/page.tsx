@@ -14,8 +14,8 @@ export default function HowItWorksPage() {
             </span>
           </div>
           <h1 className="text-4xl font-bold text-gray-900 sm:text-6xl mb-4">
-            How it
-            <span className="text-[#0D1752]"> Works</span>
+            <span className="text-[#0D1752]">How it</span>
+            <span className="text-[#24A354]"> Works</span>
           </h1>
           <p className="mt-6 text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Discover how our platform <span className="font-semibold text-[#0D1752]">revolutionizes asset tokenization</span> and 

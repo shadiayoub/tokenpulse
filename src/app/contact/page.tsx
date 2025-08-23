@@ -50,13 +50,13 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0D1752]/10 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-[#0D1752]/5 via-purple-50 to-indigo-100">
       {/* Hero Section */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 sm:text-6xl">
-            Contact
-            <span className="text-[#0D1752]"> Us</span>
+            <span className="text-[#0D1752]">Contact</span>
+            <span className="text-[#24A354]"> Us</span>
           </h1>
           <p className="mt-6 text-xl text-gray-600 max-w-4xl mx-auto">
             Get in touch with our team to learn more about TokenPulse and how we can help transform your asset management.
@@ -106,38 +106,23 @@ export default function ContactPage() {
             )}
 
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0D1752] focus:border-transparent"
-                    placeholder="Enter your first name"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0D1752] focus:border-transparent"
-                    placeholder="Enter your last name"
-                    required
-                  />
-                </div>
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  Name *
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0D1752] focus:border-transparent"
+                  placeholder="Enter your full name"
+                  required
+                />
               </div>
               
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email Address
+                  Email Address *
                 </label>
                 <input
                   type="email"
@@ -151,7 +136,7 @@ export default function ContactPage() {
 
               <div>
                 <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
-                  Company
+                  Company (Optional)
                 </label>
                 <input
                   type="text"
@@ -164,16 +149,14 @@ export default function ContactPage() {
 
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                  Subject
+                  Subject (Optional)
                 </label>
                 <select
                   id="subject"
                   name="subject"
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0D1752] focus:border-transparent"
-                  required
                 >
-                  <option value="">Select a subject</option>
-                  <option value="general">General Inquiry</option>
+                  <option value="general" selected>General Enquiry</option>
                   <option value="demo">Request Demo</option>
                   <option value="pricing">Pricing Information</option>
                   <option value="partnership">Partnership Opportunities</option>
@@ -184,7 +167,7 @@ export default function ContactPage() {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Message
+                  Message *
                 </label>
                 <textarea
                   id="message"
@@ -196,17 +179,7 @@ export default function ContactPage() {
                 ></textarea>
               </div>
 
-              <div className="flex items-center">
-                <input
-                  type="checkbox"
-                  id="newsletter"
-                  name="newsletter"
-                  className="h-4 w-4 text-[#0D1752] focus:ring-[#0D1752] border-gray-300 rounded"
-                />
-                <label htmlFor="newsletter" className="ml-2 block text-sm text-gray-700">
-                  Subscribe to our newsletter for updates and insights
-                </label>
-              </div>
+
 
               <Button 
                 type="submit" 

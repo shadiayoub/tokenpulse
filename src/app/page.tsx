@@ -24,12 +24,19 @@ export default function HomePage() {
             <p className="text-sm text-gray-500 mt-2 font-medium">— Our Vision</p>
           </div>
           <div className="max-w-4xl mx-auto">
-            <p className="text-xl text-gray-600 leading-relaxed mb-4">
-              We <span className="font-semibold text-[#0D1752]">tokenize real-world assets</span>, creating a seamless bridge between 
-              <span className="font-semibold text-[#24A354]"> traditional finance</span> and the 
-              <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0D1752] to-purple-600"> multi-trillion dollar digital asset ecosystem</span>.
-            </p>
-            <div className="flex justify-center items-center space-x-6 mt-6 text-sm text-gray-500">
+            <div className="bg-gradient-to-r from-white to-blue-50 rounded-xl shadow-lg p-8 border border-blue-100 mb-6">
+              <div className="text-center">
+                <div className="inline-block p-2 bg-blue-100 rounded-full mb-4">
+                  <span className="text-blue-600 text-lg">💡</span>
+                </div>
+                <p className="text-xl text-gray-700 leading-relaxed">
+                  We <span className="font-semibold text-[#0D1752]">tokenize real-world assets</span>, creating a seamless bridge between 
+                  <span className="font-semibold text-[#24A354]"> traditional finance</span> and the 
+                  <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0D1752] to-purple-600"> multi-trillion dollar digital asset ecosystem</span>.
+                </p>
+              </div>
+            </div>
+            <div className="flex justify-center items-center space-x-6 text-sm text-gray-500">
               <div className="flex items-center">
                 <div className="w-2 h-2 bg-[#0D1752] rounded-full mr-2"></div>
                 <span>Asset Tokenization</span>

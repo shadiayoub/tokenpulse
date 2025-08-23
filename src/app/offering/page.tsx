@@ -14,8 +14,8 @@ export default function OfferingPage() {
             </span>
           </div>
           <h1 className="text-4xl font-bold text-gray-900 sm:text-6xl mb-4">
-            Our
-            <span className="text-[#0D1752]"> Offering</span>
+            <span className="text-[#0D1752]">Our</span>
+            <span className="text-[#24A354]"> Offering</span>
           </h1>
           <p className="mt-6 text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             <span className="font-semibold text-[#0D1752]">Effortlessly Distribute</span> & 
