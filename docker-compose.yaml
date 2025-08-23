@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  node-app:
+    image: node:18-alpine  # Uses official Node.js image directly
+    container_name: token-pulse
+    working_dir: /app      # Sets working directory to /app
+    volumes:
+      - .:/app             # Mounts current directory to /app in container
+    command: sh -c "npm install && npm run build && npm run start"
+    ports:
+      - "3410:3000"        # Adjust if your app uses different port 
+    restart: unless-stopped
