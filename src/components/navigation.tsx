@@ -46,7 +46,7 @@ export function Navigation() {
           {/* CTA Buttons */}
           <div className="flex items-center space-x-4">
             <Link href="/contact">
-              <Button size="sm" className="bg-gradient-to-r from-[#0D1752] to-purple-700 hover:from-[#0D1752]/90 hover:to-purple-700/90 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 font-semibold">
+              <Button size="sm" className="bg-gradient-to-r from-[#0D1752] to-[#0D1752]/80 hover:from-[#0D1752]/90 hover:to-[#0D1752]/70 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 font-semibold">
                 Get Started
               </Button>
             </Link>
